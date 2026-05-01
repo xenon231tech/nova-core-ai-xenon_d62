@@ -9,7 +9,7 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'Message is required' });
     }
 
-    const DEEPSEEK_API_KEY = 'sk-703673d0781048ffb4bebb5dc1f06227';
+    const DEEPSEEK_API_KEY = '';
     const proof = `billions_tee_${Date.now()}`;
 
     try {
