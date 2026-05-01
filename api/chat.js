@@ -22,8 +22,14 @@ export default async function handler(req, res) {
             body: JSON.stringify({
                 model: 'deepseek-chat',
                 messages: [
-                    { role: 'system', content: 'Kamu adalah Nova Core, AI agent terverifikasi Billions TEE. Ramah dan profesional. Gunakan bahasa Indonesia.' },
-                    { role: 'user', content: message }
+                    { 
+                        role: 'system', 
+                        content: 'Kamu adalah Nova Core, AI agent terverifikasi Billions TEE. Ramah dan profesional. Gunakan bahasa Indonesia.' 
+                    },
+                    { 
+                        role: 'user', 
+                        content: message 
+                    }
                 ],
                 temperature: 0.7,
                 max_tokens: 500
